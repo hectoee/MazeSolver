@@ -9,6 +9,7 @@ An application using path finding algorithms write in c++ using SDL2
 
 ## BUILD
 - git clone
+- cd MazeSolver
 - mkdir build && cd build
 - cp ../fonts ./fonts/ -r && cp ../assets ./assets/ -r
 - cmake ..
