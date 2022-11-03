@@ -29,7 +29,7 @@ RadioButton::~RadioButton() {
 }
 
 void RadioButton::render() {
-	static SDL_Texture * t = IMG_LoadTexture(Renderer::getInstance().getSDLRenderer(), "assets/radio_buttons.png");
+	static SDL_Texture * t = IMG_LoadTexture(Renderer::getInstance().getSDLRenderer(), "../assets/radio_buttons.png");
 	_texture = t;
 	Renderer::getInstance().drawString(_text, _x + 40, _y+5);
 	if(SDL_RenderCopy(Renderer::getInstance().getSDLRenderer(), _texture, &_srect, &_drect) < 0)

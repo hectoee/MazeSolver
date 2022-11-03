@@ -88,7 +88,7 @@ void Renderer::drawFilledSquare(int x, int y, int height, Color * color) const {
 
 void Renderer::drawString(std::string str, int x, int y) const {
 	//this opens a font style and sets a size
-	TTF_Font* Sans = TTF_OpenFont("fonts/OpenSans-Light.ttf", 24);
+	TTF_Font* Sans = TTF_OpenFont("../fonts/OpenSans-Light.ttf", 24);
 
 	// this is the color in rgb format,
 	// maxing out all would give you the color white,

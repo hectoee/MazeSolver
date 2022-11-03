@@ -29,7 +29,7 @@ ResetButton::~ResetButton() {
 
 
 void ResetButton::render() {
-	static SDL_Texture * t = IMG_LoadTexture(Renderer::getInstance().getSDLRenderer(), "assets/reset_button.png");
+	static SDL_Texture * t = IMG_LoadTexture(Renderer::getInstance().getSDLRenderer(), "../assets/reset_button.png");
 	_texture = t;
 	Renderer::getInstance().drawString(_text, _x + 50, _y+5);
 	if(SDL_RenderCopy(Renderer::getInstance().getSDLRenderer(), _texture, &_srect, &_drect) < 0)
